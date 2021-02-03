@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background: whitesmoke;
+}
+
+.loading {
+  background: rgba(0, 0, 0, 0.719);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+nav .wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .location-info {
+  background: gray;
+}
+
+nav .location-info .wrapper {
+  display: block;
+  padding: 10px;
+}
+
+nav .location-info .wrapper .location {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+nav .location-info .wrapper form input {
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav .location-info .wrapper form ::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+nav .location-info .wrapper form :-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+nav .location-info .wrapper form ::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+nav .location-info .wrapper form ::placeholder {
+  text-transform: capitalize;
+}
+
+nav .navigation .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .navigation .wrapper li {
+  padding: 10px 5px;
+}
+
+nav .navigation .wrapper li a {
+  color: gray;
+}
+
+@media (min-width: 768px) {
+  nav .location-info .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .location-info .wrapper form input {
+    width: 300px;
+  }
+  nav .navigation .wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  nav .navigation .wrapper li {
+    margin-right: 20px;
+  }
+}
+
+.now .wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.now .wrapper .card {
+  background: white;
+  padding: 20px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.now .wrapper .card .time {
+  color: gray;
+}
+
+.now .wrapper .card .title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.now .wrapper .card .title .description {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.now .wrapper .card .main > div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.now .wrapper .card .main > div .temp-container {
+  text-align: center;
+}
+
+.now .wrapper .card .main > div .temp-container .temp {
+  font-size: 3.5rem;
+}
+
+.now .wrapper .card .details li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.473);
+}
+
+@media (min-width: 576px) {
+  .now .wrapper .card > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  .now .wrapper .card .details {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
