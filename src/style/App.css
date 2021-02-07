@@ -140,10 +140,13 @@ nav .navigation .wrapper li a {
 }
 
 .now .wrapper .card {
-  background: white;
+  background: #f5faff;
   padding: 20px;
   max-width: 550px;
   margin: 0 auto;
+  -webkit-box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.267);
+          box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.267);
+  border-radius: 10px;
 }
 
 .now .wrapper .card .time {
@@ -362,5 +365,125 @@ nav .navigation .wrapper li a {
 
 .hourly .wrapper .openCards {
   max-height: 3000px;
+}
+
+.daily .wrapper {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  min-height: 100vh;
+}
+
+.daily .wrapper .cards {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.daily .wrapper .cards .card {
+  background: #f7feff;
+  overflow: hidden;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.342);
+          box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.342);
+}
+
+.daily .wrapper .cards .card .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daily .wrapper .cards .card .main > div {
+  pointer-events: none;
+}
+
+.daily .wrapper .cards .card .main .timestamp .date {
+  color: #303030;
+  font-size: 1rem;
+}
+
+.daily .wrapper .cards .card .main .temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daily .wrapper .cards .card .main .temp img {
+  width: 40px;
+}
+
+.daily .wrapper .cards .card .main .temp h3 {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.daily .wrapper .cards .card .main .realfeel {
+  display: none;
+}
+
+.daily .wrapper .cards .card .main .description {
+  font-size: 1.3rem;
+}
+
+.daily .wrapper .cards .card .main .wind {
+  display: none;
+}
+
+.daily .wrapper .cards .card .main svg {
+  width: 20px;
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
+  pointer-events: none;
+}
+
+.daily .wrapper .cards .card .details {
+  max-height: 0;
+  -webkit-transition: max-height 400ms linear;
+  transition: max-height 400ms linear;
+}
+
+.daily .wrapper .cards .card .details li {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.63);
+  text-transform: capitalize;
+  color: #4b4b4b;
+}
+
+.daily .wrapper .cards .card .details li:last-child {
+  border-bottom: none;
+  padding-bottom: 30px;
+}
+
+.daily .wrapper .cards .card .activeDetails {
+  max-height: 500px;
+}
+
+@media (min-width: 576px) {
+  .daily .wrapper .cards .card {
+    padding: 0 20px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

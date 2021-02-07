@@ -6,10 +6,12 @@
         margin-top: 40px;
         
         .card{
-            background: white;
+            background: rgb(245, 250, 255);
             padding: 20px;
             max-width: 550px;
             margin: 0 auto;
+            box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.267);
+            border-radius: 10px;
             .time{
                 color: gray;
             }

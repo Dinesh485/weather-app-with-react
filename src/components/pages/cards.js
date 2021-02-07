@@ -22,7 +22,10 @@ const Cards = ({day, open}) => {
                       <svg  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                   </div>
                   <ul className= "details" id = "details">
-                   
+                  <li>
+                              <span>Description</span>
+                              <span>{data.weather[0].description}</span>
+                          </li>
                           <li>
                               <span>pressure</span>
                               <span>{data.pressure}</span>
@@ -38,6 +41,10 @@ const Cards = ({day, open}) => {
                           <li>
                               <span>UV indes</span>
                               <span>{data.uvi}</span>
+                          </li>
+                          <li>
+                            <span>Wind Speed</span>
+                            <span>{data.wind_speed} km/hr</span>
                           </li>
                 
                           <li>

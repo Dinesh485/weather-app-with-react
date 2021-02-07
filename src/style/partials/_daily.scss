@@ -1,0 +1,98 @@
+.daily{
+    .wrapper{
+        width: 90%;
+        max-width: 500px;
+        margin:  20px auto;
+        min-height: 100vh;
+       
+        .cards{
+            
+            
+            overflow:hidden;
+            
+            margin-top: 50px;
+            .card{
+                background: rgb(247, 254, 255);
+                overflow: hidden;
+                padding: 0 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.342);
+               
+                .main{
+                    display: flex;
+                   padding: 20px 0;
+                    justify-content: space-between;
+                    align-items: center;
+                    >div{
+                        pointer-events: none;
+                    }
+                    .timestamp{
+                        
+                        .date{
+                            color: rgb(48, 48, 48);
+                            font-size: 1rem;
+                        }
+                    }
+                    .temp{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            width: 40px;
+                        }
+                        h3{
+                            font-weight: normal;
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .realfeel{
+                        display: none;
+                    }
+                    .description {
+                        font-size: 1.3rem;
+                      
+                     }
+                     .wind{
+                         display: none;
+                     }
+                     svg{
+                         width: 20px;
+                         transition: transform 300ms linear;
+                         pointer-events: none;
+                     }
+                }
+                .details{
+                    
+                    max-height: 0;
+                    transition:  max-height 400ms linear;
+                
+                    li{
+                        padding: 10px 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 1px solid rgba(128, 128, 128, 0.63);
+                        text-transform: capitalize;
+                        color: rgb(75, 75, 75);
+                    }
+                    li:last-child{
+                        border-bottom: none ;
+                        padding-bottom: 30px;
+                    }
+                }
+                .activeDetails{
+                    max-height: 500px;
+                }
+            }
+            @media (min-width: 576px){
+                .card{
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        
+
+       
+    }
+}
