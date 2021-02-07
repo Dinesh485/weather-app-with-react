@@ -20,7 +20,7 @@ const error = (state = null , action) =>{
 
 const isPending = (state = true, action ) =>{
     if(action.type === 'ISPENDING'){
-        return state = !state
+        return state = false
     }else{
         return state
     }

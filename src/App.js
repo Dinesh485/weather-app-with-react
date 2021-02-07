@@ -9,6 +9,7 @@ import Daily from './components/pages/daily';
 import Alerts from './components/pages/alerts';
 import { useSelector } from 'react-redux';
 import Loading from './components/loading';
+import Error from './components/Error';
 
 
 function App() {
@@ -16,12 +17,15 @@ function App() {
     useGetWeather()
     
   const isPending = useSelector(state => state.isPending)
-
+  const error = useSelector(state => state.error)
+  
+  
   return (
     <BrowserRouter>
     <div className="App">
 
     {isPending &&  <Loading />}
+    {error && <Error message = {error}/>}
 
       <Nav />
 
