@@ -51,7 +51,7 @@ const useGetWeather =  (city) =>{
           
         
          const error = (err) =>{
-             console.log(err)
+            dispatch({type: 'ERROR', payload: "Something went wrong, can't access your location"})
          }
      
      
