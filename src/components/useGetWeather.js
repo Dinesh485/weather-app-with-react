@@ -25,11 +25,11 @@ const useGetWeather =  (city) =>{
            const weather = await weatherRes.json()
            dispatch({type: 'WEATHER', payload: weather})
 
-            const locationRes = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lng}&appid=dacff4b9d2fbe89d18ec6178a6ef26d1`)
+            const locationRes = await fetch(`/getGeoLocation/${lat}/${lng}`)
             const location = await locationRes.json()
            dispatch({type: 'REGION' ,payload: location[0]})
 
-            const airQualityRes =await fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=dacff4b9d2fbe89d18ec6178a6ef26d1`)
+            const airQualityRes =await fetch(`/getAirQulity/${lat}/${lng}`)
             const airQuality = await airQualityRes.json()
             await dispatch({type: 'AIRQUALITY', payload: airQuality})
 
