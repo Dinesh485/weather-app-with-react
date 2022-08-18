@@ -6,7 +6,7 @@ import useGetWeather from './components/useGetWeather';
 import Now from './components/pages/now';
 import Hourly from './components/pages/hourly';
 import Daily from './components/pages/daily';
-import Alerts from './components/pages/alerts';
+
 import { useSelector } from 'react-redux';
 import Loading from './components/loading';
 import Error from './components/Error';
@@ -38,9 +38,6 @@ function App() {
          </Route>
          <Route  path = '/daily'>
            <Daily />
-         </Route>
-         <Route  path = '/alerts'>
-           <Alerts/>
          </Route>
 
        </Switch>

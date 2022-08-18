@@ -28,11 +28,7 @@ const Nav = () => {
       name: "daily",
       url: "/daily",
     },
-    {
-      id: 4,
-      name: "alerts",
-      url: "/alerts",
-    },
+   
   ];
   return (
     <nav>
